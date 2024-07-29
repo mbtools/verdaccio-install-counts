@@ -148,7 +148,7 @@ export function parseUTCDateString(dateStr: string): Date {
  */
 export function getWeekRange(date) {
   const weekStart = new Date(date);
-  weekStart.setDate(date.getDate() - (date.getDay() + 6) % 7); // Set to the start of the week (Monday)
+  weekStart.setDate(weekStart.getDate() - (weekStart.getDay() + 6) % 7); // Set to the start of the week (Monday)
   const weekEnd = new Date(weekStart);
   weekEnd.setDate(weekStart.getDate() + 6); // Set to the end of the week (Sunday)
   return [weekStart, weekEnd];
