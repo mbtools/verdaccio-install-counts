@@ -1,5 +1,5 @@
 {
-  "name": "verdaccio-install-counts",
+  "name": "@mbtools/verdaccio-install-counts",
   "version": "1.2.0",
   "description": "The package provides public api that gives you download counts by package and time range.",
   "main": "lib/src/index.js",
@@ -43,7 +43,10 @@
     "statistics"
   ],
   "license": "BSD-3-Clause",
-  "repository": "openupm/verdaccio-install-counts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openupm/verdaccio-install-counts.git"
+  },
   "author": "Favo Yang <https://github.com/favoyang>",
   "scripts": {
     "build": "tsc",
